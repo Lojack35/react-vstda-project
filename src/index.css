@@ -6,6 +6,7 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-body {
+html, body {
   margin: 0;
+  background: linear-gradient(to right, #6a81cd, #b4e3eb);
 }
