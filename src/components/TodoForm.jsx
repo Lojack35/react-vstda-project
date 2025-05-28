@@ -54,13 +54,17 @@ function TodoForm({ addTodo }) {
               onChange={(e) => setPriority(e.target.value)}
               value={priority}
             >
-              <option value="1">1 - Low</option>
+              <option value="1">1 - High</option>
               <option value="2">2 - Medium</option>
-              <option value="3">3 - High</option>
+              <option value="3">3 - Low</option>
             </select>
           </div>
           <div className="card-footer">
-            <button type="submit" className="btn btn-success form-control">
+            <button
+              data-testid="create-todo"
+              type="submit"
+              className="btn btn-success form-control"
+            >
               Add Todo Item
             </button>
           </div>
